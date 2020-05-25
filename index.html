@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <meta name="keywords" content="fuck, marry, kill">
+        <meta name="description" content="Fuck, Marry, Kill Game- Gross">
+
+        <title>Fuck, Marry, Kill</title>
+
+        <style>
+            * {
+                -moz-box-sizing: border-box; /* Firexfox */
+                 -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+                box-sizing: border-box; /* IE */
+            }
+
+            body{
+                background-color:darkkhaki ;
+                padding: 0.9375rem;
+                font-size: 1.875rem;
+                margin: 0 auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color:midnightblue;
+            }
+            h1 {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 5rem;
+                text-align: center;
+                color:teal;
+                width: 37.5rem;
+                margin: 0 auto;
+                padding: 3.125rem;
+                border-bottom: 0.0625rem red solid;
+            }
+            .container {
+                width: 64rem;
+                margin: 0 auto;
+                padding: 2.5rem;
+                text-align: center;
+                border-bottom: 0.3125rem darkslategray solid;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .fuck {
+                float: left;
+                text-align: center;
+                width: 18.75rem;
+                padding: 0.3125rem;
+            }
+            .fuck img {
+                padding:3.125rem; ;
+            }
+
+            .marry {
+                float: left;
+                text-align: center;
+                width: 18.75rem;
+                padding: 0.3125rem;
+                
+            }
+            .marry img {
+                padding-top: 3.125rem ;
+            }
+            .kill {
+                float: left;
+                text-align: center;
+                width: 18.75rem;
+                padding: 0.3125rem;
+               
+            }
+            .kill img {
+                padding-top: 3.125rem;
+            }
+            .types {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0rem;
+                height: 31.25rem;
+            }
+            .output {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',sans-serif;
+            }
+
+            @media only screen and (max-width: 37.5rem) {
+                body {
+                    width: 100%;
+                    margin: 0 ;
+                }
+                h1 {
+                    width: auto;
+                    font-size: 3.125rem;
+                }
+                .container {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-bottom: 3.125rem;
+                    border: 0rem;
+                }
+                .fuck{
+                    margin: 0 auto;
+                    float: inherit;
+                }
+                .fuck img {
+                    margin-bottom: 2.5rem;
+                    padding-bottom: 3.125rem;
+                }
+                .marry {
+                    margin: 0 auto;
+                    float: inherit;
+                }
+                .marry img {
+                    padding-bottom: 3.125rem;
+                    margin-bottom: 2.5rem;
+                }
+                .kill {
+                    margin: 0 auto;
+                    float: inherit;
+                }
+                .kill img {
+                    padding-bottom: 3.125rem;
+                    margin-bottom: 2.5rem;
+                }
+                .types {
+                    padding-bottom: 5rem;
+                    border-bottom: 0.125rem darkblue solid;
+                    margin-top: 1.25rem;
+                    height: auto;
+                }
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Fuck, Marry, Kill</h1>
+        <div class="container" >
+
+            <script>
+                var fuck = [
+                    'a Dog <br> <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smartest-dog-breeds-1553287693.jpg?crop=0.673xw:1.00xh;0.167xw,0&resize=640:*" width = 250px height=300px> ',
+                    'a cactus <br> <img src ="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1568042845-Cactus_mix_yellow_2048x.jpg" width= 250px height=300px>',
+                    'This guy <br> <img src ="https://i1.wp.com/themanatee.net/wp-content/uploads/2015/08/hairy_man_copy-e14388805256761.jpg?fit=344%2C245&ssl=1" width= 250px height=300px>',
+                    'The girl whom you didn\'t text back <br> <img src ="https://miro.medium.com/max/4788/1*wt4G5z6_m0JMA05FWhQSHg.jpeg" width= 250px height=300px>',
+                    'Hannibal Lector <br> <img src = "https://i.pinimg.com/236x/e7/d7/81/e7d78105f51c4d53939afe067bc3d453.jpg" width= 250px height=300px>',
+                    'Trump <br> <img src ="https://media3.oakpark.com/Images/2/2/42153/2/1/2_2_42153_2_1_800x800.jpg" width= 250px height=300px>'
+                ]
+                var marry = [
+                    'a Cow <br> <img src ="https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg" width= 250px height=auto>',
+                    'Red dragon <br> <img src ="https://cdnb.artstation.com/p/assets/images/images/013/400/025/large/antonio-j-manzanedo-red-dragon-manzanedo3.jpg?1539429909" width= 250px height=300px>',
+                    'Momota Didi <br> <img src ="http://www.quickmeme.com/img/fe/fe454a74c65c7e5a3732e64f854f2ee36ca189c493ccab5d00e75370e798b826.jpg" width= 250px height=300px>',
+                    'Guy on Tinder you ignored <br> <img src ="https://www.lovethispic.com/uploaded_images/218149-Hot-Guy-To-Wake-Up-To.jpg" width= 250px height=300px>',
+                    'Skylar White <br> <img src ="https://vignette.wikia.nocookie.net/breakingbad/images/d/df/Skyler_2010.png/revision/latest?cb=20180826093205" width= 250px height=300px>',
+                    'Aladdin <br> <img src ="https://vignette.wikia.nocookie.net/disney/images/b/bb/Profile_-_Aladdin.png/revision/latest?cb=20190829033153" width= 250px height=300px>'
+                ]
+                var kill = [
+                    'Mudi <br> <img src ="https://lh3.googleusercontent.com/proxy/zI9wEMxL1a7ytZXEe_VuECMnP7pWFxpr-fJqqkwVIlN0scuzN0nMx4m8ylgpDVZXOxel42MPoXLVuMAkMsyg3WmGW8FdJSxD7mRtc1BaJRXXiJKaf57RtY2kaUtXSg" width= 250px height=300px>',
+                    'Walter White <br> <img src ="https://cdnb.artstation.com/p/assets/images/images/018/009/901/large/matheus-castro-walter-white.jpg?1558145601" width= 250px height=300px>',
+                    'Gandii <br> <img src ="https://img2.pngio.com/gandhi-transparent-caricature-mahatma-gandhi-cartoon-png-clipart-mahatma-gandhi-cartoon-png-880_966.png" width= 250px height=300px>',
+                    'Miluu Dadu <br> <img src ="https://images.unsplash.com/photo-1567201080580-bfcc97dae346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width= 250px height=300px>',
+                    'a Butterfly <br> <img src ="https://www.scitecheuropa.eu/wp-content/uploads/2019/07/butter.jpg" width= 250px height=300px>',
+                    'Dolores Umbridge <br> <img src ="https://i.pinimg.com/originals/77/15/29/7715298b32e343a9ec29deebb24156b8.jpg" width= 250px height=300px>'
+                ]
+
+                var username = prompt("Hey, what's your name!");
+
+                var randomNumber = Math.floor(Math.random()*marry.length);
+                var fk = fuck[randomNumber];
+                var mr = marry[randomNumber];
+                var kl = kill[randomNumber];
+            </script>
+            <section class="output"> 
+                <span>
+                    <script>
+                        document.write("Hey, "+username+"! You'll <p>");
+                    </script>
+                </span>
+            </section>
+            <section class="types clearfix">
+                <section class="fuck clearfix">
+                    <script>
+                        document.write("Fuck "+fk);
+                    </script>
+                </section>
+                <section class="marry clearfix">
+                    <script>
+                        document.write("Marry "+mr);
+                    </script>
+                </section>
+                <section class="kill clearfix">
+                    <script>
+                        document.write("Kill "+kl);
+                    </script>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>
